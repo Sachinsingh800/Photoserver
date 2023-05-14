@@ -14,7 +14,9 @@ mongoose.connect(process.env.MONGO_URL,{
 })
 
 const post_route=require('./routes/postRoutes')
+const user_route=require('./routes/userRoute')
 app.use("/api",post_route)
+app.use("/api",user_route)
 
 const PORT=8080 || process.env.PORT
 app.listen(PORT,()=>{

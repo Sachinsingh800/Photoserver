@@ -57,6 +57,5 @@ module.exports={
     createPost,
     getPosts,
     deletePost,
-    updatePost
-   
+    updatePost 
 }
